@@ -1,7 +1,7 @@
 import asyncio
 import discord
 from discord.ext import commands
-from config import TOKEN
+from boto.s3.connection import S3Connection
 import requests
 
 bot = commands.Bot(command_prefix='m!',
@@ -34,7 +34,7 @@ async def status(ctx):
 
 loop = asyncio.get_event_loop()
 try:
-    loop.run_until_complete(bot.start(TOKEN))
+    loop.run_until_complete(bot.start(s3.TOKEN))
 except KeyboardInterrupt:
     loop.run_until_complete(bot.logout())
 finally:
