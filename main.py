@@ -1,12 +1,12 @@
 import asyncio
 import discord
 from discord.ext import commands
-from boto.s3.connection import S3Connection
+import os
 import requests
 
 bot = commands.Bot(command_prefix='m!',
                    description='''ToyaMine''')
-
+TOKEN = os.environ.get('TOKEN')
 @bot.command()
 async def status(ctx):
     """| Get status on the toyaga server"""
@@ -34,7 +34,7 @@ async def status(ctx):
 
 loop = asyncio.get_event_loop()
 try:
-    loop.run_until_complete(bot.start(s3.TOKEN))
+    loop.run_until_complete(bot.start())
 except KeyboardInterrupt:
     loop.run_until_complete(bot.logout())
 finally:
