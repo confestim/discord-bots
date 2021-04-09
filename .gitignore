@@ -128,5 +128,8 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# Discord config gile
+# Discord config file
 config.py
+
+# pycharm stuff
+.idea
