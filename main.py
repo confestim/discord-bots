@@ -34,7 +34,7 @@ async def status(ctx):
 
 loop = asyncio.get_event_loop()
 try:
-    loop.run_until_complete(bot.start())
+    loop.run_until_complete(bot.start(TOKEN))
 except KeyboardInterrupt:
     loop.run_until_complete(bot.logout())
 finally:
