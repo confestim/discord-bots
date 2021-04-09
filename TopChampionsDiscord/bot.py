@@ -6,8 +6,8 @@ import os, glob, sys, re
 from youtube_search import YoutubeSearch
 import TenGiphPy
 
-g = TenGiphPy.Giphy(token='3eKT8LDsKsGFFQnaS8bZ9ZRGeEqdfJJp')
-TOKEN = "NjE0ODYwNzk2NDMzOTI0MTQx.XWFnvQ.1Bb9WDR77ymc5TTgcqq1PX_9U_I"
+g = TenGiphPy.Giphy(token='token for giphy')# yes i accidentally leaked mine here but it has been reset
+TOKEN = "token id here" # here too
 bot = commands.Bot(command_prefix='#',
                    description='''multi-tool bot made by Yamozha''')
 
