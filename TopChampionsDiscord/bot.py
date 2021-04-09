@@ -8,7 +8,6 @@ import TenGiphPy
 from config import TOKEN
 
 g = TenGiphPy.Giphy(token='token for giphy')# yes i accidentally leaked mine here but it has been reset
-TOKEN = "token id here" # here too
 bot = commands.Bot(command_prefix='#',
                    description='''multi-tool bot made by Yamozha''')
 
