@@ -5,9 +5,9 @@ import youtube_dl
 import os, glob, sys, re
 from youtube_search import YoutubeSearch
 import TenGiphPy
+from config import TOKEN
 
-g = TenGiphPy.Giphy(token='3eKT8LDsKsGFFQnaS8bZ9ZRGeEqdfJJp')
-TOKEN = "NjE0ODYwNzk2NDMzOTI0MTQx.XWFnvQ.1Bb9WDR77ymc5TTgcqq1PX_9U_I"
+g = TenGiphPy.Giphy(token='giphy-token')
 bot = commands.Bot(command_prefix='#',
                    description='''multi-tool bot made by Yamozha''')
 
