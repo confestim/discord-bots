@@ -32,7 +32,7 @@ async def checkPlayer():
                 channel = bot.get_channel(829796491395989565)
                 em = discord.Embed(title=f"{i['name']} has just connected!", colour=discord.Colour(0x00ff00))
                 em.set_thumbnail(url=f"https://crafatar.com/avatars/{i['id']}")
-                embed.set_author(name="MineToy", url="https://toyaga.eu", icon_url="https://static.wikia.nocookie.net/minecraft/images/b/b0/Stick_inventory.png/revision/latest/scale-to-width-down/150?cb=20110823193610")
+                em.set_author(name="MineToy", url="https://toyaga.eu", icon_url="https://static.wikia.nocookie.net/minecraft/images/b/b0/Stick_inventory.png/revision/latest/scale-to-width-down/150?cb=20110823193610")
                 await channel.send(embed=em)
                 
 
@@ -57,7 +57,7 @@ async def coords(ctx,mode="all", *, coords=None,):
 
         em = discord.Embed(title=f"Coordinate Compass", colour=discord.Colour(randoCol))
         em.set_thumbnail(url="https://www.pngkit.com/png/full/206-2062034_minecraft-bukkit-icon-8-bit-coin.png")
-        embed.set_author(name="MineToy", url="https://toyaga.eu", icon_url="https://static.wikia.nocookie.net/minecraft/images/b/b0/Stick_inventory.png/revision/latest/scale-to-width-down/150?cb=20110823193610")
+        em.set_author(name="MineToy", url="https://toyaga.eu", icon_url="https://static.wikia.nocookie.net/minecraft/images/b/b0/Stick_inventory.png/revision/latest/scale-to-width-down/150?cb=20110823193610")
 
         for i in range(len(our_coords)):
             i = our_coords[i]
@@ -110,7 +110,7 @@ async def status(ctx):
     status, players = r["status"], r["players"]
     em = discord.Embed(title=f"Info about office.toyaga.eu", colour=discord.Colour(0x8c0303))
     em.set_thumbnail(url="https://static.wikia.nocookie.net/minecraft/images/b/b0/Stick_inventory.png/revision/latest/scale-to-width-down/150?cb=20110823193610")
-    embed.set_author(name="MineToy", url="https://toyaga.eu", icon_url="https://static.wikia.nocookie.net/minecraft/images/b/b0/Stick_inventory.png/revision/latest/scale-to-width-down/150?cb=20110823193610")
+    em.set_author(name="MineToy", url="https://toyaga.eu", icon_url="https://static.wikia.nocookie.net/minecraft/images/b/b0/Stick_inventory.png/revision/latest/scale-to-width-down/150?cb=20110823193610")
     if status == "success":
         em.add_field(name="Status", value=f"Server is up!", inline=False)
     else:
