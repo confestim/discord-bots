@@ -22,7 +22,7 @@ async def checkPlayer():
         r = r.json()
         players = r["players"]["sample"]
         print(players)
-        await asyncio.sleep(1200)
+        await asyncio.sleep(600)
 
         r = requests.get("https://mcapi.us/server/status?ip=office.toyaga.eu")
         r = r.json()
