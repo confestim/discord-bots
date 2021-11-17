@@ -30,7 +30,7 @@ async def timer(ctx, timer_time):
         time = int(timer_time.strip("s"))
     else:
         ctx.send("Try formatting it better!!")
-    await ctx.message.add_reaction("✔️")
+    await ctx.message.add_reaction("♿")
     await asyncio.sleep(time)
     voice_channel = ctx.author.voice.channel
     vc = await voice_channel.connect()
