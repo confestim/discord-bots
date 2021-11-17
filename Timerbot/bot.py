@@ -35,6 +35,9 @@ async def timer(ctx, timer_time):
     voice_channel = ctx.author.voice.channel
     vc = await voice_channel.connect()
     vc.play(discord.FFmpegPCMAudio("./alarm.mp3"))
+    while vc.is_playing():
+        await sleep(1)
+    await vc.disconnect()
 
 loop = asyncio.get_event_loop()
 try:
