@@ -2,7 +2,7 @@ import discord
 import asyncio
 from discord.ext import commands
 from config import TOKEN
-import time
+from time import sleep
 
 bot = commands.Bot(command_prefix='&',
                    description='''multi-tool bot made by Yamozha''')
