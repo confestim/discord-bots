@@ -129,7 +129,7 @@ dmypy.json
 .pyre/
 
 # Discord config file
-# config.py
+config.py
 
 # pycharm stuff
-.idea
+.idea/
